@@ -20,20 +20,20 @@ var currentPosition = (remainingDay / totalWaitingDays) * maxW;
 function make_background()
 {
   planeImage = new Image();
-  planeImage.src = '../images/waiting/plane.png';
+  planeImage.src = './images/waiting/plane.png';
   planeImage.onload = function(){
     context.drawImage(planeImage, currentPosition, 1, 200, 100);
   }
 
 
   japanImage = new Image();
-  japanImage.src = '../images/waiting/japan.png';
+  japanImage.src = './images/waiting/japan.png';
   japanImage.onload = function(){
     context.drawImage(japanImage, w - 200, 100, 200, 100);
   }
 
   vietnamImage = new Image();
-  vietnamImage.src = '../images/waiting/vietnam.png';
+  vietnamImage.src = './images/waiting/vietnam.png';
   vietnamImage.onload = function(){
     context.drawImage(vietnamImage, 0, 100, 200, 100);
   }
